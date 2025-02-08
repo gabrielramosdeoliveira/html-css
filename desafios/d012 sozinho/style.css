@@ -22,38 +22,60 @@ header {
 }
 header h1{
 font-family: var(--fonte-h1);
+font-size: 4em;
+padding-top: 20px;
 }
 header a {
     text-decoration: none;
     color: white;
     font-family: Verdana, Tahoma, sans-serif;
     font-weight: 900;
+    font-size: 1em;
 }
-main > p {
+section > p {
     font-family: var(--fonte-p);
-}
-p.fundo{
+    line-height: 1.8em;
+    font-size: 3.5vh;
     position: absolute;
     background-size: 100% 100%;
-    height: 400px;
-    width: 200px;
+    height: 300px;
+    width: 270px;
     color: white;
     background-color: rgba(0, 0, 0, 0.418);
-    margin-top: 60px;
-    margin-left: 30px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    padding-left: 5px;
 }
-div {
-    height: 500px;
-    margin: auto;
-    
+section.normal > p {
+    font-family: var(--fonte-p);
+    line-height: 1.8em;
+    position: absolute;
+    background-size: 100% 100%;
+    height: 200px;
+    width: 270px;
+    color: black;
+    background-color: white;
+}
+section.normal {
+    height: 360px;
     background-size: cover;
     background-attachment: fixed;
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-div.joana {
+section {
+    height: 460px;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-left: 30px;
+    padding-top: 60px;
+}
+section.joana {
 background-image: url('imagens/background001.jpg');
 background-position: right center;
 }
-div.livro {
+section.livro {
 background-image: url('imagens/background002.jpg');
 }
 footer {
@@ -61,4 +83,15 @@ footer {
     color: white;
     text-align: center;
     font-size: 1.0em;
+    padding: 10px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+footer > p {
+    font-size: 1.2em;
 }
